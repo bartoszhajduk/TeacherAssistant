@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">TeacherAssistent</string>
+    <string name="Studenci">Studenci</string>
+    <string name="Przedmioty">Przedmioty</string>
+    <string name="Raport">Raport</string>
+    <string name="Oceny">Oceny</string>
+    <string name="string_student_input_name">Imię</string>
+    <string name="string_student_input_nazwisko">Nazwisko</string>
+    <string name="string_usun">Usuń</string>
+    <string name="string_edytuj">Edytuj</string>
+    <string name="string_imie">Imię</string>
+    <string name="string_semestr">Semestr</string>
+    <string name="string_nazwa">Nazwa</string>
+    <string name="string_dodaj">Dodaj</string>
+    <string name="string_id">Id</string>
+    <string-array name="semester">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="grade">
+        <item>2</item>
+        <item>2.5</item>
+        <item>3</item>
+        <item>3.5</item>
+        <item>4</item>
+        <item>4.5</item>
+        <item>5</item>
+    </string-array>
+    <string name="string_grupy">Grupy</string>
+    <string name="string_komentarz">komentarz</string>
+    <string name="string_przedmiot">Przedmiot</string>
+</resources>

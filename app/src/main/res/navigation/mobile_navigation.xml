@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_raport">
+
+    <fragment
+        android:id="@+id/navigation_raport"
+        android:name="com.example.teacherassistent.view.raport.RaportFragment"
+        android:label="@string/Raport"
+        tools:layout="@layout/fragment_raport" />
+
+    <fragment
+        android:id="@+id/navigation_add_student"
+        android:name="com.example.teacherassistent.view.addingStudent.AddingStudentFragment"
+        android:label="@string/Studenci"
+        tools:layout="@layout/fragment_adding_student" />
+
+    <fragment
+        android:id="@+id/navigation_add_subject"
+        android:name="com.example.teacherassistent.view.addingCourse.AddingCourseFragment"
+        android:label="@string/Przedmioty"
+        tools:layout="@layout/fragment_adding_course" />
+
+    <fragment
+        android:id="@+id/navigation_grade"
+        android:name="com.example.teacherassistent.view.addingGrade.AddingGradeFragment"
+        android:label="@string/Oceny"
+        tools:layout="@layout/fragment_grade" />
+
+    <fragment
+        android:id="@+id/navigation_add_student_course"
+        android:name="com.example.teacherassistent.view.addingStudentCourse.AddingStudentCourseFragment"
+        android:label="@string/string_grupy"
+        tools:layout="@layout/fragment_adding_student_course" />
+</navigation>

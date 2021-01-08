@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:id="@+id/grade_list_row">
+
+    <TextView
+        android:id="@+id/label_grade_grade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.4"
+        android:text="ocena" />
+
+    <TextView
+        android:id="@+id/label_grade_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="6.4"
+        android:text="tekst" />
+
+
+    <TextView
+        android:id="@+id/label_grade_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.6"
+        android:text="data" />
+
+    <Button
+        android:id="@+id/grade_button_delete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:drawableLeft="@drawable/ic_delete_24px"
+        android:padding="0dp" />
+
+</LinearLayout>

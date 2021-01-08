@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:id="@+id/grade_list_row">
+
+    <TextView
+        android:id="@+id/grade_list_today_row_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.7"
+        android:text="@string/string_imie" />
+
+    <TextView
+        android:id="@+id/grade_list_today_row_surname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.7"
+        android:text="@string/string_student_input_nazwisko" />
+
+    <TextView
+        android:id="@+id/grade_list_today_row_subject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.9"
+        android:text="@string/Przedmioty" />
+
+    <TextView
+        android:id="@+id/label_grade_grade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:text="ocena" />
+
+    <TextView
+        android:id="@+id/label_grade_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.1"
+        android:text="@string/string_komentarz" />
+
+
+    <TextView
+        android:id="@+id/label_grade_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.4"
+        android:text="data" />
+
+</LinearLayout>

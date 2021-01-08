@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.addingStudentCourse.AddingStudentCourseFragment">
+
+    <Spinner
+        android:id="@+id/student_course_name_spinner"
+        android:layout_width="211dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_course_input_spinner" />
+
+    <Spinner
+        android:id="@+id/student_course_input_spinner"
+        android:layout_width="211dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/semester"
+        app:layout_constraintBottom_toTopOf="@+id/student_course_name_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/student_course_label_semester"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:text="@string/string_semestr"
+        app:layout_constraintBottom_toBottomOf="@+id/student_course_input_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/student_course_input_spinner"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/student_course_input_spinner" />
+
+
+    <TextView
+        android:id="@+id/student_course_label_course"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:text="@string/Przedmioty"
+        app:layout_constraintBottom_toBottomOf="@+id/student_course_name_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/student_course_name_spinner"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/student_course_name_spinner" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_course_name_spinner">
+
+        <LinearLayout
+            android:id="@+id/upper_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/string_imie" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/string_student_input_nazwisko" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/student_course_recycler_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/student_course_button_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_weight="0.01"
+            android:text="@string/string_dodaj" />
+
+        <Button
+            android:id="@+id/student_course_button_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="0.01"
+            android:text="@string/string_usun"
+            android:enabled="false"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/lower_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/string_imie" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/string_student_input_nazwisko" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/student_course_recycler_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

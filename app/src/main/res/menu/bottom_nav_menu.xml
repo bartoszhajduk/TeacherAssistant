@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="wrap_content">
+
+    <item
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation_raport"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/Raport"/>
+
+    <item
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation_add_student"
+        android:icon="@drawable/ic_add_student_24dp"
+        android:title="@string/Studenci"/>
+
+    <item
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation_add_subject"
+        android:icon="@drawable/ic_add_subject_24dp"
+        android:title="@string/Przedmioty"/>
+
+    <item
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation_add_student_course"
+        android:icon="@drawable/ic_call_merge_24px"
+        android:title="@string/string_grupy"/>
+
+    <item
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation_grade"
+        android:icon="@drawable/ic_grade_24px"
+        android:title="@string/Oceny"/>
+
+
+</menu>
